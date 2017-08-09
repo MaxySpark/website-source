@@ -1,0 +1,48 @@
+@import 'bulma/bulma'
+
+.hero-section
+  background-color: #3498db
+
+.hero-section button
+  margin: 1.7em 0
+  cursor: pointer
+  padding: 1em;
+  text-align: center
+  text-transform: uppercase
+  border: 0 none
+  font-weight: 700
+  color: #454545
+  background-color: #feee7d
+  box-shadow: 2px 5px 10px rgba($dark, .1)
+  &:hover
+    transition: all 60ms ease
+    opacity: .85
+
+.hero-section
+  h1,h2,h3,h4,h5,h6
+    color: #fff
+    font-weight: 700
+    margin-bottom: 0
+    padding: 0
+  h2
+    padding-top: 0.5em
+    font-size: 1.2em
+
+  .homepage-activity
+    padding: 2em 0 0 0
+    h4
+      font-size: 1.3em
+    h5
+      font-size: 1em
+    h6
+      font-size: 1em
+      color: rgba(0,0,0,0.5)
+
+
+.fade-enter
+  opacity: 0
+  z-index: 1
+
+.fade-enter.fade-enter-active
+  opacity: 1
+  transition: opacity 250ms ease-in
