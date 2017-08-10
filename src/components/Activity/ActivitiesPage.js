@@ -1,9 +1,25 @@
 import React from 'react'
+import TimelineItem from './TimelineItem'
 
 const ActivitiesPage = props => (
         <section className="section">
           <div className="container">
             <h2 className="title">Activities</h2>
+            <div className="timeline">
+                <TimelineItem type="is-danger"/>
+                <TimelineItem type="is-warning"/>
+                <TimelineItem/>
+                <TimelineItem/>
+            </div>
+          </div>
+        </section>
+)
+
+export default ActivitiesPage;
+
+
+/*
+
             <table className="table">
               <thead>
                 <tr>
@@ -28,8 +44,5 @@ const ActivitiesPage = props => (
                 </tr>
               </tbody>
             </table>
-          </div>
-        </section>
-)
 
-export default ActivitiesPage;
+*/

@@ -1,7 +1,15 @@
 @import 'bulma/bulma'
 
+// keyframes
+@keyframes justrotate
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
 .hero-section
   background-color: #3498db
+  height: 30em
 
 .hero-section button
   margin: 1.7em 0
@@ -37,12 +45,13 @@
     h6
       font-size: 1em
       color: rgba(0,0,0,0.5)
+  .animation-div
+    display: flex
+    justify-content: center
+    align-items: center
+    img
+      height: 12em
+      animation: justrotate 20s infinite
+      +mobile
+        height: 3em
 
-
-.fade-enter
-  opacity: 0
-  z-index: 1
-
-.fade-enter.fade-enter-active
-  opacity: 1
-  transition: opacity 250ms ease-in
