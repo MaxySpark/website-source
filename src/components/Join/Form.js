@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Form = props => (
-            <form>
+            <form method="post">
+              <input type="hidden" name="form-name" value="joinus" />
               <div className="field">
                 <label name="name" className="label">Name</label>
                 <div className="control">
@@ -23,43 +24,43 @@ const Form = props => (
               <div className="field has-addons">
                 <div className="control">
                   <div className="select">
-                    <select>
-                      <option>Semester</option>
-                      <option>1st Semester</option>
-                      <option>3rd Semester</option>
-                      <option>5th Semester</option>
-                      <option>7th Semester</option>
+                    <select name="semester">
+                      <option value="">Semester</option>
+                      <option value="1st">1st Semester</option>
+                      <option value="3rd">3rd Semester</option>
+                      <option value="5th">5th Semester</option>
+                      <option value="7th">7th Semester</option>
                     </select>
                   </div>
                 </div>
                 <div className="control">
                   <div className="select">
-                    <select>
-                      <option>Branch</option>
-                      <option>CSE</option>
-                      <option>ECE</option>
-                      <option>Mechanical</option>
-                      <option>Electrical</option>
-                      <option>Civil</option>
+                    <select name="branch">
+                      <option value="">Branch</option>
+                      <option value="cse">CSE</option>
+                      <option value="ece">ECE</option>
+                      <option value="mechanical">Mechanical</option>
+                      <option value="electrical">Electrical</option>
+                      <option value="civil">Civil</option>
                     </select>
                   </div>
                 </div>
               </div>
               <div className="field">
-                 <label className="label">What do you expect from the club?</label>
+                 <label name="expectations" className="label">What do you expect from the club?</label>
                  <div className="control">
-                   <textarea className="textarea" placeholder="Textarea"></textarea>
+                   <textarea name="expectations" className="textarea" placeholder="Textarea"></textarea>
                  </div>
               </div>
               <div className="field">
-                 <label className="label">Technical Interests?(Just names, use commas)</label>
+                 <label name="interests" className="label">Technical Interests?(Just names, use commas)</label>
                  <div className="control">
-                   <textarea className="textarea" placeholder="Textarea"></textarea>
+                   <textarea name="interests" className="textarea" placeholder="Textarea"></textarea>
                  </div>
               </div>
               <div className="field">
                 <div className="control">
-                  <button className="button is-info is-medium full-width">Join</button>
+                  <button type="submit" className="button is-info is-medium full-width">Join</button>
                 </div>
               </div>
             </form>
