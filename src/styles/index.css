@@ -5907,3 +5907,7 @@ label.panel-block {
 .timeline-container {
   height: 20em;
   overflow-y: auto; }
+  @media screen and (max-width: 768px) {
+    .timeline-container .timeline .timeline-item .timeline-content {
+      padding: 0;
+      flex: inherit; } }

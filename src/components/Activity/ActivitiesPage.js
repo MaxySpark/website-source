@@ -1,5 +1,8 @@
 import React from 'react'
+import axios from 'axios'
+import { lifecycle, compose, withState } from 'recompose'
 import TimelineItem from './TimelineItem'
+
 
 const ActivitiesPage = props => (
         <section className="section form-container">
@@ -9,10 +12,16 @@ const ActivitiesPage = props => (
               <div className="column is-6 box">
                 <div className="timeline-container">
                 <div className="timeline">
-                    <TimelineItem type="is-danger"/>
-                    <TimelineItem type="is-warning"/>
-                    <TimelineItem/>
-                    <TimelineItem/>
+                    {props.activities.length > 0
+                     ?props.activities.map(activity => {
+                      return <TimelineItem
+                      key={activity.serialnumber}
+                      name={activity.name}
+                      date={activity.date}
+                      />
+                     })
+                     :<p>Fetching Activities...</p>
+                    }
                 </div>
                 </div>
               </div>
@@ -21,34 +30,17 @@ const ActivitiesPage = props => (
         </section>
 )
 
-export default ActivitiesPage;
+const ActivitiesPageWithLife = compose(
+  withState('activities', 'setActivities', []),
+  lifecycle({
+    componentDidMount(){
+        axios.get('https://mighty-tor-86880.herokuapp.com/sheet/13AWPX68OBmPmf0KZhkZxtUdtFdmvuP312XG8utNnoZE')
+             .then((res)=>{
+                this.props.setActivities(res.data);
+             })
+    }
+  })
+)(ActivitiesPage);
 
 
-/*
-
-            <table className="table">
-              <thead>
-                <tr>
-                  <th>Sl No.</th>
-                  <th>Name</th>
-                  <th>Date</th>
-                  <th>Members</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>+32</td>
-                  <td>Tajjh jkashdjha asjhdjashd asjdh</td>
-                  <td>Tajjh</td>
-                  <td>Tajjh</td>
-                </tr>
-                <tr>
-                  <td>+32</td>
-                  <td>Tajjh</td>
-                  <td>Tajjh</td>
-                  <td>Tajjh</td>
-                </tr>
-              </tbody>
-            </table>
-
-*/
+export default ActivitiesPageWithLife;

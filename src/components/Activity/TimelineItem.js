@@ -2,7 +2,7 @@
 import React from 'react'
 
 const TimelineItem = props => (
-        <div className={`timeline-item ${props.type}`} id="timeline-example-1">
+        <div className={`timeline-item ${props.type || 'is-primary'}`} id="timeline-example-1">
           <div className="timeline-left is-icon-large">
             <a href="#timeline-example-1" className="timeline-icon"></a>
           </div>
@@ -11,8 +11,8 @@ const TimelineItem = props => (
               <div className="level-left">
                 <div className="level-item">
                   <div>
-                    <p className="heading">January 2017</p>
-                    <p>Timeline content - Can include any HTML element</p>
+                    <p className="heading">{props.date}</p>
+                    <p>{props.name}</p>
                   </div>
                 </div>
                 <div className="level-right">
