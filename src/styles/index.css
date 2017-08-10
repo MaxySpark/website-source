@@ -5846,6 +5846,8 @@ label.panel-block {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .flex-center img {
+    border-radius: 50%; }
 
 .form-container {
   background-color: #3498db; }

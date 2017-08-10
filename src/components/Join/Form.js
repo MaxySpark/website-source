@@ -52,7 +52,7 @@ const Form = props => (
                  </div>
               </div>
               <div className="field">
-                 <label className="label">Technical Interests?</label>
+                 <label className="label">Technical Interests?(Just names, use commas)</label>
                  <div className="control">
                    <textarea className="textarea" placeholder="Textarea"></textarea>
                  </div>

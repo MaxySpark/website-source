@@ -2,11 +2,6 @@ import React from 'react'
 
 const MemberCard = props => (
 <div className="card">
-  <div className="card-image">
-    <figure className="image is-4by3">
-            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image"/>
-    </figure>
-  </div>
   <div className="card-content">
     <div className="media">
       <div className="media-content">
