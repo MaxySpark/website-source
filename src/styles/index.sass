@@ -1,3 +1,6 @@
+@import 'bulma/sass/utilities/initial-variables'
+$blue: #72d0eb
+$primary: $blue
 @import 'bulma/bulma'
 
 // keyframes
@@ -6,6 +9,19 @@
     transform: rotate(0deg)
   100%
     transform: rotate(360deg)
+
+.full-width
+  width: 100%
+
+.flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+.form-container
+  background-color: #3498db
+  h1,h2,h3,h4,h5,h6
+    color: #fff
 
 .hero-section
   background-color: #3498db
@@ -55,3 +71,6 @@
       +mobile
         height: 3em
 
+.timeline-container
+  height: 20em
+  overflow-y: auto
