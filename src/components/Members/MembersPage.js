@@ -8,7 +8,11 @@ const MembersPage = props => (
           <div className="container">
             <h1 className="title">Members (20)</h1>
             <div className="columns is-multiline">
-                {props.members && props.members.map(member => <MemberCard/>)}
+              {props.members && props.members.map( member =>
+                      <div className="column is-3">
+                      <MemberCard key={member.roll} name={member.name} bio={member.interests}/>
+                      </div>
+              )}
             </div>
           </div>
         </section>

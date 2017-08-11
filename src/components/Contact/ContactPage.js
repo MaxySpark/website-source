@@ -6,9 +6,7 @@ const ContactPage = props => (
             <div className="columns">
               <div className="column">
                 <h1 className="title">Contact</h1>
-              </div>
-              <div className="column">
-                      animation
+                <p>codingclubgimt@gmail.com</p>
               </div>
             </div>
           </div>
