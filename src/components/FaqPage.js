@@ -5,6 +5,7 @@ const FaqPage = props => (
           <div className="container">
             <h2 className="title">FAQ</h2>
             <h4 className="title is-4">Can I join?</h4>
+            <p>yes.</p>
           </div>
         </section>
 )
