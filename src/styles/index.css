@@ -5728,6 +5728,111 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+.timeline .timeline-item {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  margin-bottom: 2.4rem;
+  position: relative; }
+  .timeline .timeline-item::before {
+    background: #dbdbdb;
+    content: "";
+    height: 100%;
+    left: 1.1rem;
+    position: absolute;
+    top: 2.4rem;
+    width: 0.2rem; }
+  .timeline .timeline-item .timeline-left {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto; }
+  .timeline .timeline-item .timeline-content {
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 0.2rem 0 0.2rem 1.5rem; }
+  .timeline .timeline-item .timeline-icon {
+    border-radius: 0.5rem;
+    color: #fff;
+    display: block;
+    height: 2.4rem;
+    text-align: center;
+    width: 2.4rem; }
+    .timeline .timeline-item .timeline-icon::before {
+      border: 0.2rem solid #72d0eb;
+      border-radius: 0.5rem;
+      content: "";
+      display: block;
+      height: .8rem;
+      left: .8rem;
+      position: absolute;
+      top: .8rem;
+      width: .8rem; }
+    .timeline .timeline-item .timeline-icon .icon {
+      height: 100%;
+      width: 100%; }
+    .timeline .timeline-item .timeline-icon.is-icon-large {
+      background: #72d0eb; }
+      .timeline .timeline-item .timeline-icon.is-icon-large::before {
+        content: none; }
+      .timeline .timeline-item .timeline-icon.is-icon-large .icon {
+        font-size: 1.25rem !important;
+        line-height: 1.25rem !important; }
+  .timeline .timeline-item.is-white .timeline-icon.is-icon-large {
+    background: white; }
+  .timeline .timeline-item.is-white .timeline-icon::before {
+    border: 0.2rem solid white !important; }
+  .timeline .timeline-item.is-white .timeline-icon .icon {
+    color: #0a0a0a; }
+  .timeline .timeline-item.is-black .timeline-icon.is-icon-large {
+    background: #0a0a0a; }
+  .timeline .timeline-item.is-black .timeline-icon::before {
+    border: 0.2rem solid #0a0a0a !important; }
+  .timeline .timeline-item.is-black .timeline-icon .icon {
+    color: white; }
+  .timeline .timeline-item.is-light .timeline-icon.is-icon-large {
+    background: whitesmoke; }
+  .timeline .timeline-item.is-light .timeline-icon::before {
+    border: 0.2rem solid whitesmoke !important; }
+  .timeline .timeline-item.is-light .timeline-icon .icon {
+    color: #363636; }
+  .timeline .timeline-item.is-dark .timeline-icon.is-icon-large {
+    background: #363636; }
+  .timeline .timeline-item.is-dark .timeline-icon::before {
+    border: 0.2rem solid #363636 !important; }
+  .timeline .timeline-item.is-dark .timeline-icon .icon {
+    color: whitesmoke; }
+  .timeline .timeline-item.is-primary .timeline-icon.is-icon-large {
+    background: #72d0eb; }
+  .timeline .timeline-item.is-primary .timeline-icon::before {
+    border: 0.2rem solid #72d0eb !important; }
+  .timeline .timeline-item.is-primary .timeline-icon .icon {
+    color: #fff; }
+  .timeline .timeline-item.is-info .timeline-icon.is-icon-large {
+    background: #72d0eb; }
+  .timeline .timeline-item.is-info .timeline-icon::before {
+    border: 0.2rem solid #72d0eb !important; }
+  .timeline .timeline-item.is-info .timeline-icon .icon {
+    color: rgba(0, 0, 0, 0.7); }
+  .timeline .timeline-item.is-success .timeline-icon.is-icon-large {
+    background: #23d160; }
+  .timeline .timeline-item.is-success .timeline-icon::before {
+    border: 0.2rem solid #23d160 !important; }
+  .timeline .timeline-item.is-success .timeline-icon .icon {
+    color: #fff; }
+  .timeline .timeline-item.is-warning .timeline-icon.is-icon-large {
+    background: #ffdd57; }
+  .timeline .timeline-item.is-warning .timeline-icon::before {
+    border: 0.2rem solid #ffdd57 !important; }
+  .timeline .timeline-item.is-warning .timeline-icon .icon {
+    color: rgba(0, 0, 0, 0.7); }
+  .timeline .timeline-item.is-danger .timeline-icon.is-icon-large {
+    background: #ff3860; }
+  .timeline .timeline-item.is-danger .timeline-icon::before {
+    border: 0.2rem solid #ff3860 !important; }
+  .timeline .timeline-item.is-danger .timeline-icon .icon {
+    color: #fff; }
+
 @keyframes justrotate {
   0% {
     transform: rotate(0deg); }
