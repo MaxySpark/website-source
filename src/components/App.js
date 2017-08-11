@@ -12,6 +12,14 @@ import ProjectsPage from './Projects/ProjectsPage'
 import Navbar from './Navbar'
 import Footer from './Footer'
 
+class CustomRoute extends Component {
+  render() {
+    return (
+      <Route exact path={this.props.path} component={this.props.component} />
+    )
+  }
+}
+
 class App extends Component {
   render() {
     return (
