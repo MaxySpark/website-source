@@ -1,4 +1,5 @@
 import React from 'react'
+import { lifecycle, compose } from 'recompose'
 
 const FaqPage = props => (
         <section className="section">
@@ -10,4 +11,15 @@ const FaqPage = props => (
         </section>
 )
 
-export default FaqPage;
+const FaqPageWithLife = compose(
+  lifecycle({
+    componentDidMount(){
+      const toggleButton = document.querySelector('.burger');
+      const menu = document.querySelector('.navbar-menu');
+      menu.classList.remove('is-active');
+      toggleButton.classList.remove('is-active');
+    }
+  })
+)(FaqPage);
+
+export default FaqPageWithLife;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { lifecycle, compose } from 'recompose'
 import { Link } from 'react-router-dom'
 import HeroSectionActivity from './HeroSectionActivity'
 import mozillaLogo from '../mozilla-firefox.svg'
@@ -21,4 +22,15 @@ const HeroSection = props => (
         </section>
 )
 
-export default HeroSection;
+const HeroSectionWithLife = compose(
+  lifecycle({
+    componentDidMount(){
+      const toggleButton = document.querySelector('.burger');
+      const menu = document.querySelector('.navbar-menu');
+      menu.classList.remove('is-active');
+      toggleButton.classList.remove('is-active');
+    }
+  })
+)(HeroSection);
+
+export default HeroSectionWithLife;

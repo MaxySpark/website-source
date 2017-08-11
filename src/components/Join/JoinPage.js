@@ -1,4 +1,5 @@
 import React from 'react'
+import { lifecycle, compose } from 'recompose'
 import Form from './Form'
 import smashpaws from '../../smashpaws.gif'
 
@@ -18,4 +19,15 @@ const JoinPage = props => (
         </section>
 )
 
-export default JoinPage;
+const JoinPageWithLife = compose(
+  lifecycle({
+    componentDidMount(){
+      const toggleButton = document.querySelector('.burger');
+      const menu = document.querySelector('.navbar-menu');
+      menu.classList.remove('is-active');
+      toggleButton.classList.remove('is-active');
+    }
+  })
+)(JoinPage);
+
+export default JoinPageWithLife;
