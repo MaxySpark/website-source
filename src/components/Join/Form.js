@@ -47,6 +47,12 @@ const Form = props => (
                 </div>
               </div>
               <div className="field">
+                <label className="label">Roll number</label>
+                <div className="control">
+                   <input name="roll" className="input" type="text" placeholder="e.g 150310007025"/>
+                </div>
+              </div>
+              <div className="field">
                  <label name="expectations" className="label">What do you expect from the club?</label>
                  <div className="control">
                    <textarea name="expectations" className="textarea" placeholder="Textarea"></textarea>
