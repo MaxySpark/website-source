@@ -5849,6 +5849,9 @@ label.panel-block {
   .flex-center img {
     border-radius: 50%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+    @media screen and (max-width: 768px) {
+      .flex-center img {
+        height: 5em; } }
 
 .form-container {
   background-color: #3498db; }
@@ -5857,7 +5860,7 @@ label.panel-block {
 
 .hero-section {
   background-color: #3498db;
-  height: 30em; }
+  height: 40em; }
 
 .hero-section button {
   margin: 1.7em 0;
