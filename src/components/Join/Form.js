@@ -55,13 +55,13 @@ const Form = props => (
               <div className="field">
                  <label name="expectations" className="label">What do you expect from the club?</label>
                  <div className="control">
-                   <textarea name="expectations" className="textarea" placeholder="Textarea"></textarea>
+                   <textarea name="expectations" className="textarea" placeholder="Eg. a friendly community, learn new things"></textarea>
                  </div>
               </div>
               <div className="field">
                  <label name="interests" className="label">Technical Interests?(Just names, use commas)</label>
                  <div className="control">
-                   <textarea name="interests" className="textarea" placeholder="Textarea"></textarea>
+                   <textarea name="interests" className="textarea" placeholder="Eg. Web Development, Security, Mobile, Networking"></textarea>
                  </div>
               </div>
               <div className="field">
