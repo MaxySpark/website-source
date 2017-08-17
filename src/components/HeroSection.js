@@ -10,7 +10,7 @@ const HeroSection = props => (
           <div className="container">
             <div className="columns">
               <div className="column">
-                 <h1 className="title">GIMT Coding Club</h1>
+                 <h1 className="title">Coding Club GIMT</h1>
                  <h2 className="subtitle">A Mozilla Club, Guwahati</h2>
                  <Link to="/join"><button className="">Join the club</button></Link>
                  {
