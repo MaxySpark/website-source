@@ -5,7 +5,7 @@ const MemberCard = props => (
   <div className="card-content">
     <div className="media">
       <div className="media-content">
-        <p className="title is-4">{props.name}</p>
+        <p className="title is-6">{props.name}</p>
       </div>
     </div>
 
