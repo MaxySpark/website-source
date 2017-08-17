@@ -18,6 +18,7 @@ const ActivitiesPage = props => (
                       key={activity.serialnumber}
                       name={activity.name}
                       date={activity.date}
+                      next={activity.next}
                       />
                      })
                      :<p>Fetching Activities...</p>
