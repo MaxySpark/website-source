@@ -64,6 +64,7 @@ const Form = props => (
                    <textarea name="interests" className="textarea" placeholder="Eg. Web Development, Security, Mobile, Networking"></textarea>
                  </div>
               </div>
+              
               <div className="field">
                 <div className="control">
                   <button type="submit" className="button is-info is-medium full-width">Join</button>
